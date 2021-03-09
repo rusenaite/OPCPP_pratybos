@@ -18,9 +18,6 @@ int main(){
         Time time3(0, 58, 55);
         Time time4(1, 9, 58);
 
-        //if time is equal to 0 program will catch the error
-        //Time time4(0, 0, 0);
-
         Motorcycle *bike1 = new Motorcycle;
         v.push_back(bike1);
          Motorcycle *bike2 = new Motorcycle;
@@ -35,9 +32,6 @@ int main(){
         bike3->setBikeName("Motorcycle3");
         bike4->setBikeName("Motorcycle4");
 
-        //undefined name would catch the error:
-        //bike4->setBikeName("");
-
         std::cout << "1. " << bike1->printName(bike1->getBikeName(), time1, !wind) << std::endl;
         std::cout << "2. " << bike2->printName(bike2->getBikeName(), time2, !wind) << std::endl;
         time3.addSec();
@@ -46,9 +40,6 @@ int main(){
         time4.addSec();
         std::cout << "4. " << bike4->printName(bike4->getBikeName(), time4, wind) << "\n\n";
         std::cout << "Count: " << Motorcycle::getBikeCount() << std::endl;
-
-        //if distance equals 0 program will catch the error
-        //double distance = 0;
 
         double distance = 120;
         bike1->setDistance(distance);
