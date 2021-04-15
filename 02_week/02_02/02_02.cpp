@@ -13,7 +13,7 @@ int main(){
     std::vector<int> data{1, 3, 3, 5, 3, 3, 1};
 
     for(int i = 0; i < data.size(); ++i){
-        set.addAndCount(data[i]); //or Set.data[i]?
+        set.addAndCount(data[i]);
     }
 
     std::cout << "-> Number to add to the multiset: ";
